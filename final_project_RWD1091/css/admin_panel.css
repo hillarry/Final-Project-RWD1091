@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.logo{
+	text-decoration: none;
+	font-weight:bold;
+	color:black;
+	font-size:30px;
+
+}
+
+.navbar{
+	display:flex;
+	align-items:center;
+	padding:20px;
+}
+
+nav{
+	flex:1;
+	text-align:right;
+
+}
+
+ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: black;
+
+}
+
+ul li a:hover{
+	color:red;
+
+}
+
+ul li button{
+	background-color:#0ab581;
+	padding:15px 20px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+
+ul li button:hover{
+	border-color: #0ab581;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	background: rgba(204, 204, 204,0.3);
+}
+
+.login-container{
+	padding: 50px 0;
+	font-size: 12px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+div#maincard {
+	max-width: 300px;
+	box-shadow: -5px 2px 18px 4px yellow;
+}
+
+.cover-photo{
+	background-color: #0ab581;
+	width: 600px;
+	height: 100px;
+}
+
+.photo {
+	background : #f9f9f9;
+	width: 600px;
+	height: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+img{
+	position: relative;
+	top: -50px;
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
+	box-shadow: -1px 1px 11px 6px rgba(189,172,172,0.33);
+}
+
+.content{
+	background: #f9f9f9;
+	width: 600px;
+	height: 100px;
+	position: relative;
+	top: -35px;
+}
+
+.contact{
+	background: #30354d;
+	width: 600px;
+	height: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+h2.name, h3,a {
+	margin:0;
+	text-align: center;
+}
+
+h2.name{
+	padding-bottom: 20px;
+}
+
+h3.newmember{
+	padding-bottom: 10px;
+}
+
+a{
+	color: #0ab581;
+	text-decoration: none;
+}
+a:hover{
+	color:black;
+}
+
+ul{
+	padding:0;
+}
+
+.contact .fab{
+	font-size: 22px;
+	padding: 10px;
+	text-decoration: none;
+	color: #0ab581;
+}
+
+.contact .fab:hover{
+	color: #000;
+}
+
+/*footer*/
+
+.footer{
+	padding:3rem 1rem;
+	/*background: rgb(191, 191, 191);*/
+	background: white;
+	margin-top: 2rem;
+}
+
+.footer .row{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	max-width: 80rem;
+	margin: 0 auto;
+
+}
+
+.footer .col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color:black;
+}
+
+.footer .col:last-child{
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footer .col:last-child span{
+	font-size: 2.5rem;
+	margin-right: 2rem;
+	margin-top: 3rem;
+
+}
+
+.footer .col a{
+	color: black;
+	font-size: 1rem;
+	padding: 0.5rem;
+	font-weight: 300;
+	text-decoration: none;
+	margin-left: 1.5rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer .col a:hover{
+	color:red;
+}
+
+.footer .col h4{
+	margin-bottom: 1rem;
+	margin-left: 2rem;
+}
+
+@media only screen and (max-width: 800px){
+	.footer .col:last-child span{
+		font-size: 1rem;
+		margin-right: 0.5rem;
+		margin-top: 3rem;
+
+	}
+	.footer .col a{
+		color: black;
+		font-size: 0.5rem;
+		padding: 0.2rem;
+		font-weight:400;
+		text-decoration: none;
+	}
+	.footer .col h4{
+		font-size: 0.7rem;
+		margin-bottom: 1rem;
+		margin-left: 2rem;
+	}
+
+}
+
+
+/*nav bar responsive*>*/
+.menu-icon{
+	width: 30px;
+	margin-left: 100px;
+	display: none;
+}
+
+@media only screen and (max-width : 800px){
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left :0;
+		width: 100%;
+		background: grey;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+
+	nav ul  li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	nav ul li a{
+		color:white;
+	}
+
+	.menu-icon{
+		margin-top : 80px;
+		display: block;
+		cursor: pointer;
+	}
+}
+
+

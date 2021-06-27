@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>admin panel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href = "../css/admin_panel.css" rel = "stylesheet" type = "text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+	<script src = '../js/loginform.js'></script>
+</head>
+<body>
+	<div class="container">
+		<div class="navbar">
+			<div>
+				<a href="#" class="logo">ZAYDAY</a>
+			</div>
+
+			<nav>
+				<ul id = "MenuItems">
+					<li><a href="./websitehome.html">HOME</a></li>
+					<li><a href="./products.html" target="_blank">PRODUCTS</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="./contact.html">CONTACT</a></li>
+					<li><button type = "button" onclick = "logoutFunction()">LOGOUT</button></li>
+				</ul>
+			</nav>
+
+			<img src = '../images/menua.jpg' class = "menu-icon" onclick = "menutoggle()">
+		</div>
+	</div>
+
+	<div class = "login-container">
+		<div id ="main-card">
+			<div class = "cover-photo"></div>
+			<div class = "photo">
+				<img src = "../images/loginicon.png" alt= ""/>
+			</div>
+			<div class = "content">
+				<h2 class = "name">Hillary</h2>
+				<h3 class = "newmember">New Member</h3>
+				<h3 class = "email"><a href = "mailto:hhm@gmail.com">hhm@gmail.com</a></h3>
+			</div>
+			<div class = "contact">
+				<ul>
+					<a href = "#"><i class="fab fa-facebook"></i></a>
+					<a href = "#"><i class="fab fa-twitter"></i></a>
+					<a href = "#"><i class="fab fa-instagram-square"></i></a>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<footer class =" footer">
+		<div class = "row">
+			<div class = "col d-flex">
+				<h4>INFORMATION</h4>
+				
+					<a href="">About us</a>
+					<a href="">Contact us</a>
+					<a href="">Term & Condition</a>
+					<a href="">Shipping Guide</a>
+
+			</div>
+
+			<div class = "col d-flex">
+				<h4>USEFUL LINK</h4>
+				<a href="">Online Store</a>
+				<a href="">Top Brands</a>
+				<a href="">Discount</a>
+				<a href="">Payment</a>
+
+			</div>
+
+			<div class = "col d-flex">
+				<span><i class="fab fa-facebook"></i></span>
+				<span><i class="fab fa-twitter"></i></span>
+				<span><i class="fab fa-instagram-square"></i></span>
+
+			</div>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript">
+		var MenuItems = document.getElementById('MenuItems');
+
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle(){
+			if (MenuItems.style.maxHeight == "0px"){
+
+				MenuItems.style.maxHeight = "200px";
+			}
+			else{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+</body>
+</html>
