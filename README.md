@@ -1,6 +1,5 @@
-Final Project RWD 1091
 This is about the ecommerce webiste for the fashion shop by using HTML, CSS and Javascript.
 
-For Login form,
+For Login form             
 Username : hhm@gmail.com,  
 Password : 123456
